@@ -158,6 +158,32 @@ div.content {
   }
 }
 
+.indexWellText{
+  text-align: center;
+  font-size: 500%;
+}
+
+.indexMain{
+  margin-top: 20%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.indexButton{
+  border: none;
+  font-size: 200%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  background: linear-gradient(70deg, #f9a64a 30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #a5cd39 60%, #236a9e 60%);
+}
+
+
 
 
  /* ==========================================================================

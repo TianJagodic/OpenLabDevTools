@@ -164,7 +164,7 @@ div.content {
 }
 
 .indexMain{
-  margin-top: 20%;
+  margin-top: 18%;
   text-align: center;
   font-family: "Roboto", sans-serif;
 
@@ -179,10 +179,14 @@ div.content {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  color: #1c1c1c;
 
   background: linear-gradient(70deg, #f9a64a 30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #a5cd39 60%, #236a9e 60%);
 }
 
+.CA_center{
+  margin-top: 18%;
+}
 
 
 

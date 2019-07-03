@@ -2,50 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OpenApp: Login</title>
+    <title>OpenApp</title>
+  <link rel="icon" href="../favicon.ico">
   <meta name="description" content="The OpenLab DevTools">
+
+  <!-- Google Font Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.ico">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
 </head>
 <body>
+
 <!--[if IE]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-<!----------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------ -->
+
+<!-- The sidebar -->
+<div class="sidebar">
+ <a href="../ChangeApp/ChangeApp.html"><img src="img/Chat.png" width="100" height="50"></a>
+  <a class="active" href="">Contact 1</a>
 
 
-<div class="indexMain">
-  <span class="indexWellText">    Login or Register</span>
-
-  <br>
-
-  <from>
-    <!-- <a href="Login/Login.html"> <button class="indexButton">Login</button></a> -->
-    <input id="LoginButtonClick" type="button" value="Login" onclick="OnLogin();" class="indexButton">
-    <input id="RegisterButtonClick" type="button" value="Register" onclick="OnRegister();" class="indexButton">
-  </from>
 </div>
 
-<!----------------------------------------------------- -->
 
-<script src="Login.js"></script>
+<!-- Page content -->
+<div class="content">
+  ..
+</div>
 
-<script src="js/vendor/modernizr-3.7.1.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 
+<!-- ------------------------------------------------------------------------ -->
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
@@ -70,6 +70,5 @@
   const Oa = firebase.authentication();
 
   db.settings({timestampsInSnapshots: true});
-</script>
 </body>
 </html>

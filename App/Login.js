@@ -2,8 +2,10 @@
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
     console.log('user logged in: ', user);
+    HideLogin();
   } else {
     console.log('user logged out');
+    ShowLogin();
   }
 });
 
@@ -33,6 +35,13 @@ async function OnLogin() {
     // ...
   });
 }
+
+// logout
+const logout = document.querySelector('#logout');
+logout.addEventListener('click', (e) => {
+  e.preventDefault();
+  firebase.auth().signOut();
+});
 
 //
 //-------------------------Register && login with email part of this damed script
@@ -144,6 +153,15 @@ window.onclick = function(event) {
     Loginmodal.style.display = "none";
     RegisterModal.style.display = "none";
     LoginEmailModal.style.display = "none";
-    L
   }
+};
+
+//Hide or show the login stuff login-part
+const LoginPart = document.getElementById("login-part");
+function HideLogin() {
+  LoginPart.style.display = "none";
+}
+
+function ShowLogin() {
+  LoginPart.style.display = "block";
 }

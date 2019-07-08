@@ -247,6 +247,16 @@ div.content {
   width: 20%; /* Could be more or less, depending on screen size */
 }
 
+.modal-content-loginEmail {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+}
+
 /* The Close Button */
 .close {
   color: #aaa;

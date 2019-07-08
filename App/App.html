@@ -52,11 +52,98 @@
   ..
 </div>
 
+<div alt="Login Stuff" id="login-part">
+  <div class="indexMain">
+    <span class="indexWellText">    Login or Register</span>
+
+    <br>
+
+    <from>
+      <!-- <a href="Login/Login.html"> <button class="indexButton">Login</button></a> -->
+      <input id="LoginButtonClick" type="button" value="Login"  class="indexButton">
+      <input id="RegisterButtonClick" type="button" value="Register"  class="indexButton">
+    </from>
+  </div>
+
+
+  <!-- The Login  Modal -->
+  <div id="LoginModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content-login">
+      <span class="close">&times;</span>
+      <p><center>Login with:</center></p>
+      <br>
+      <center><button id="LoginEmailClick" class="indexButton">Email</button></center>
+      <span class="btn-github">Login with github</span>
+      <center><button id="LoginWithGoogle" class="indexButton"><img  src="../App/img/google_signin_buttons/web/1x/btn_google_signin_light_normal_web.png"></button></center>
+      <!--<center><button id="LoginWithGithub" class="indexButton"><img  src="../App/img/google_signin_buttons/web/1x/btn_google_signin_light_normal_web.png"></button></center>-->
+      <!--<div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false"></div>-->
+
+    </div>
+
+  </div>
+
+  <!-- The Register  Modal -->
+  <div id="RegisterModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content-register">
+      <span class="close">&times;</span>
+      <form id="register-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required /> <br>
+          <label for="signup-email">Email address</label>
+        </div>
+
+        <div class="input-field">
+          <input type="password" id="signup-password" required /> <br>
+          <label for="signup-password">Choose password</label>
+        </div>
+        <button class="indexButton">Sign up</button>
+        <p id="RegisterErrorText" style="color: #ff094b;">...</p>
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- The LoginEmail  Modal -->
+  <div id="LoginEmailModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content-loginEmail">
+      <span class="close">&times;</span>
+      <center><form id="LoginEmail-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required /> <br>
+          <label for="signup-email">Email address</label>
+        </div>
+
+        <div class="input-field">
+          <input type="password" id="login-password" required /> <br>
+          <label for="signup-password">Password</label>
+        </div>
+        <button class="indexButton">Login</button>
+        <p id="LoginEmailErrorText" style="color: #ff094b;">...</p>
+      </form></center>
+
+    </div>
+
+  </div>
+</div>
+
 
 <!-- ------------------------------------------------------------------------ -->
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -74,9 +161,15 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-  const Oa = firebase.authentication();
 
-  db.settings({timestampsInSnapshots: true});
+  const db = firebase.firestore();
+  const Oa = firebase.auth();
+
+
+</script>
+
+
+<script src="Login.js"></script>
+
 </body>
 </html>

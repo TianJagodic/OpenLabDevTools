@@ -271,7 +271,39 @@ div.content {
   text-decoration: none;
   cursor: pointer;
 }
+/* ==========================================================================
+  Tasks classes
+  ========================================================================== */
 
+.Task{
+  background-color: rgba(143, 138, 142, 0.77);
+  border-radius: 1%;
+  border-color: #d3d3d3;
+  float: left;
+  margin-left: 10%;
+  margin-top: 3%;
+  padding-bottom: 10%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.TaskTitle{
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+  /*background-color: rgba(85, 85, 85, 0.79);*/
+  font-size: 150%;
+
+}
+
+.TaskContent{
+  background-color: #999999;
+  border-radius: 2px;
+  text-align: center;
+  padding: 5%;
+}
 
  /* ==========================================================================
    Helper classes

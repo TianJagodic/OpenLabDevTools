@@ -106,17 +106,23 @@
     <div class="modal-content-register">
       <span class="close">&times;</span>
       <form id="register-form">
-        <div class="input-field">
-          <input type="email" id="signup-email" required /> <br>
-          <label for="signup-email">Email address</label>
+
+        <div class="input-field col-lg-12">
+          <input type="email" id="signup-email" required class="col-sm-12"/> <br>
+          <label for="signup-email" class="col-lg-12">Email address</label>
         </div>
 
-        <div class="input-field">
-          <input type="password" id="signup-password" required /> <br>
-          <label for="signup-password">Choose password</label>
+        <div class="input-field col-lg-12">
+          <input type="password" id="signup-password" required class="col-sm-12"/> <br>
+          <label for="signup-password" class="col-lg-12">Choose password</label>
         </div>
+
         <button class="indexButton">Sign up</button>
-        <p id="RegisterErrorText" style="color: #ff094b;">...</p>
+
+        <div class="col-lg-12">
+          <p id="RegisterErrorText" style="color: #ff094b;">...</p>
+        </div>
+
       </form>
 
     </div>

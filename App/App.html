@@ -22,6 +22,9 @@
 
   <meta name="theme-color" content="#fafafa">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="App.css">
+
 </head>
 <body>
 
@@ -68,15 +71,26 @@
 
 
   <!-- The Login  Modal -->
-  <div id="LoginModal" class="modal">
+  <div id="LoginModal" class="modal col-lg-2">
 
     <!-- Modal content -->
     <div class="modal-content-login">
       <span class="close">&times;</span>
-      <p><center>Login with:</center></p>
-      <br>
-      <center><button id="LoginEmailClick" class="indexButton">Email</button></center>
-      <span class="btn-github">Login with github</span>
+
+      <div class="col-lg-12">
+        <span class="btn-github"><center>Login with:</center></span>
+      </div>
+
+      <div class="col-lg-12">
+        <center><button id="LoginEmailClick" class="indexButton">Email</button></center>
+      </div>
+
+      <div class="col-lg-12 invisibleText"> skrivnost </div>
+
+      <div class="col-lg-12">
+        <span class="btn-github"><center>Login with github</center></span>
+      </div>
+
       <center><button id="LoginWithGoogle" class="indexButton"><img  src="../App/img/google_signin_buttons/web/1x/btn_google_signin_light_normal_web.png"></button></center>
       <!--<center><button id="LoginWithGithub" class="indexButton"><img  src="../App/img/google_signin_buttons/web/1x/btn_google_signin_light_normal_web.png"></button></center>-->
       <!--<div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false"></div>-->
@@ -86,7 +100,7 @@
   </div>
 
   <!-- The Register  Modal -->
-  <div id="RegisterModal" class="modal">
+  <div id="RegisterModal" class="modal col-lg-2">
 
     <!-- Modal content -->
     <div class="modal-content-register">
@@ -110,7 +124,7 @@
   </div>
 
   <!-- The LoginEmail  Modal -->
-  <div id="LoginEmailModal" class="modal">
+  <div id="LoginEmailModal" class="modal col-lg-2">
 
     <!-- Modal content -->
     <div class="modal-content-loginEmail">

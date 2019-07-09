@@ -1,14 +1,19 @@
 const TabList = document.querySelector("#AllTasks");
+var Tabs = [];
 
 db.collection('Tasks').get().then((snapshot) => {
   console.log(snapshot.docs);
   snapshot.docs.forEach(doc => {
     console.log(doc.data().title);
-    ShowTab(doc);
+    Tabs[doc.data().pos] = doc;
+    //ShowTab(doc);
   });
+  Tabs.forEach(ShowTab);
 });
 
-function ShowTab(doc){
+
+
+function ShowTab(item){
   console.log("We are creating all the tabs");
   //Create all the contents
   let Tab = document.createElement('div');
@@ -18,11 +23,16 @@ function ShowTab(doc){
 
   //Add Classes to the parts
   Tab.className = "Task";
-  Tab.alt = doc.data().title;
   TabName.className = "TaskTitle";
 
-  TabName.textContent = doc.data().title;
+  Tab.alt = item.data().title;
+  TabName.textContent = item.data().title;
 
   Tab.appendChild(TabName);
   TabList.appendChild(Tab);
+}
+
+
+function ChangeParent(current, _new, object){
+
 }

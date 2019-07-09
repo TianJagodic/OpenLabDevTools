@@ -285,6 +285,7 @@ div.content {
   padding-bottom: 10%;
   padding-left: 1%;
   padding-right: 1%;
+  width: 200px;
 }
 
 .TaskTitle{
@@ -299,6 +300,7 @@ div.content {
 }
 
 .TaskContent{
+  margin-top: 10px;
   background-color: #999999;
   border-radius: 2px;
   text-align: center;

@@ -132,6 +132,7 @@ Loginbtn.onclick = function() {
 
 LoginEmailBtn.onclick = function(){
   LoginEmailModal.style.display = "block";
+  Loginmodal.style.display = "none";
 };
 
 RegisterBtn.onclick = function(){
@@ -165,3 +166,4 @@ function HideLogin() {
 function ShowLogin() {
   LoginPart.style.display = "block";
 }
+

@@ -1,0 +1,13 @@
+.invisibleText {
+  color: #fefefe;
+  text-align: center;
+}
+
+.notLoggedIn {
+  background-color: #fefefe;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  padding: 10px;
+}

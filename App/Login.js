@@ -128,14 +128,17 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 Loginbtn.onclick = function() {
   Loginmodal.style.display = "block";
+  LoginPart.style.display = "none";
 };
 
 LoginEmailBtn.onclick = function(){
   LoginEmailModal.style.display = "block";
+  Loginmodal.style.display = "none";
 };
 
 RegisterBtn.onclick = function(){
   RegisterModal.style.display = "block";
+  LoginPart.style.display = "none";
 };
 
 // When the user clicks on <span> (x), close the modal
@@ -143,6 +146,7 @@ span.onclick = function() {
   Loginmodal.style.display = "none";
   RegisterModal.style.display = "none";
   LoginEmailModal.style.display = "none";
+  LoginPart.style.display = "block";
 };
 
 
@@ -153,6 +157,7 @@ window.onclick = function(event) {
     Loginmodal.style.display = "none";
     RegisterModal.style.display = "none";
     LoginEmailModal.style.display = "none";
+    LoginPart.style.display = "block";
   }
 };
 
@@ -165,3 +170,4 @@ function HideLogin() {
 function ShowLogin() {
   LoginPart.style.display = "block";
 }
+

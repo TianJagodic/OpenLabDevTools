@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a50e3c27-08e4-468a-ba3d-5404a00b5335" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/App.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/App.js" afterDir="false" />
     </list>
@@ -84,7 +85,7 @@
       <workItem from="1562689481417" duration="5380000" />
       <workItem from="1563245860793" duration="1907000" />
       <workItem from="1563527202738" duration="118000" />
-      <workItem from="1564317549329" duration="4186000" />
+      <workItem from="1564317549329" duration="5106000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with app switching">
       <created>1562076548708</created>
@@ -233,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564320548810</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added ClearPage()">
+      <created>1564321761541</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1564321761541</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +305,7 @@
     <MESSAGE value="Sort Tabs form DB DONE" />
     <MESSAGE value="git ignore added" />
     <MESSAGE value="merge commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge commit" />
+    <MESSAGE value="Added ClearPage()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ClearPage()" />
   </component>
 </project>

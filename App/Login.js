@@ -61,7 +61,7 @@ signupForm.addEventListener('submit', (e) => {
       isAdmin: false,
       email: email
     }).then(()=>{
-      Console.Log("We tryed to write to the database " + email);
+      console.log("We tryed to write to the database " + email);
       // close the signup modal & reset form
       RegisterModal.style.display = "none";
       signupForm.reset();

@@ -57,12 +57,15 @@ signupForm.addEventListener('submit', (e) => {
 
   // sign up the user
   firebase.auth().createUserWithEmailAndPassword(email, password).then(cred => {
-    console.log(cred.user);
-
-    // close the signup modal & reset form
-    RegisterModal.style.display = "none";
-    signupForm.reset();
-
+    return db.collection('users').doc(cred.user.uid).set({
+      isAdmin: false,
+      email: email
+    }).then(()=>{
+      Console.Log("We tryed to write to the database " + email);
+      // close the signup modal & reset form
+      RegisterModal.style.display = "none";
+      signupForm.reset();
+    })
   }).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;

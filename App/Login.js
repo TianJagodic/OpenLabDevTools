@@ -116,6 +116,7 @@ loginForm.addEventListener('submit', (e) => {
 var Loginmodal = document.getElementById("LoginModal");
 var RegisterModal = document.getElementById("RegisterModal");
 var LoginEmailModal = document.getElementById("LoginEmailModal");
+var LoginPart = document.getElementById("login-part");
 
 // Get the button that opens the modal
 var Loginbtn = document.getElementById("LoginButtonClick");
@@ -123,7 +124,9 @@ var RegisterBtn = document.getElementById("RegisterButtonClick");
 var LoginEmailBtn = document.getElementById("LoginEmailClick");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
+var span3 = document.getElementsByClassName("close")[2];
 
 // When the user clicks on the button, open the modal
 Loginbtn.onclick = function() {
@@ -142,12 +145,29 @@ RegisterBtn.onclick = function(){
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+/*function close(event) {
+  console.log("close, " + event.target);
   Loginmodal.style.display = "none";
   RegisterModal.style.display = "none";
   LoginEmailModal.style.display = "none";
   LoginPart.style.display = "block";
-};
+}*/
+
+span1.onclick = function(event) {
+  Loginmodal.style.display = "none";
+  LoginPart.style.display = "block";
+}
+
+span2.onclick = function(event) {
+  RegisterModal.style.display = "none";
+  LoginPart.style.display = "block";
+}
+
+span3.onclick = function(event) {
+  LoginEmailModal.style.display = "none";
+  LoginPart.style.display = "block";
+}
+
 
 
 
@@ -162,7 +182,6 @@ window.onclick = function(event) {
 };
 
 //Hide or show the login stuff login-part
-const LoginPart = document.getElementById("login-part");
 function HideLogin() {
   LoginPart.style.display = "none";
 }
